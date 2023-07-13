@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.792 s <<< FAILURE! - in TestSuite
+BTC_ETH_PriceValidation(test.PriceValidation)  Time elapsed: 0.531 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Test is failed expected [true] but found [false]
+	at test.PriceValidation.BTC_ETH_PriceValidation(PriceValidation.java:40)
+
