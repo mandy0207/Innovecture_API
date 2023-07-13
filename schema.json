@@ -1,0 +1,131 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome2",
+    "definitions": {
+        "Welcome2": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Datum"
+                    }
+                },
+                "info": {
+                    "$ref": "#/definitions/Info"
+                }
+            },
+            "required": [
+                "data",
+                "info"
+            ],
+            "title": "Welcome2"
+        },
+        "Datum": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "symbol": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "nameid": {
+                    "type": "string"
+                },
+                "rank": {
+                    "type": "integer"
+                },
+                "price_usd": {
+                    "type": "string"
+                },
+                "percent_change_24h": {
+                    "type": "string"
+                },
+                "percent_change_1h": {
+                    "type": "string"
+                },
+                "percent_change_7d": {
+                    "type": "string"
+                },
+                "price_btc": {
+                    "type": "string"
+                },
+                "market_cap_usd": {
+                    "type": "string"
+                },
+                "volume24": {
+                    "type": "number"
+                },
+                "volume24a": {
+                    "type": "number"
+                },
+                "csupply": {
+                    "type": "string"
+                },
+                "tsupply": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "msupply": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "csupply",
+                "id",
+                "market_cap_usd",
+                "msupply",
+                "name",
+                "nameid",
+                "percent_change_1h",
+                "percent_change_24h",
+                "percent_change_7d",
+                "price_btc",
+                "price_usd",
+                "rank",
+                "symbol",
+                "tsupply",
+                "volume24",
+                "volume24a"
+            ],
+            "title": "Datum"
+        },
+        "Info": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "coins_num": {
+                    "type": "integer"
+                },
+                "time": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "coins_num",
+                "time"
+            ],
+            "title": "Info"
+        }
+    }
+}

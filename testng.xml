@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="PriceChangeValidation">
+    <classes>
+      <class name="test.PriceChange_Validation"/>
+    
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="PriceValidation">
+    <classes>
+    
+      <class name="test.PriceValidation"/>
+    
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Filter_BTC_ETH">
+    <classes>
+    
+     
+      <class name="test.Filter_BTC_ETH_Assets"/>
+   
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="SchemaValidation">
+    <classes>
+    
+      <class name="test.SchemaValidation"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
