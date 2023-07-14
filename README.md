@@ -3,6 +3,7 @@ Folder Structure
 1) The "src/test/java" folder contains a package for tests, which includes 4 test classes. One of the additional     test cases is to validate the JSON schema of the response.
 2) The "BaseTest" class contains common utilities and is extended by all the test classes.
 3) The "PriceChangeValidationTest" is responsible for generating a .json file as mentioned in the question.
+4) Failing ome test case as per ques's requirement
 
 Executing Tests/Test Suite:
 
@@ -14,4 +15,4 @@ Executing Tests/Test Suite:
 Notes:
 1) Default TestNG and HTML reports are available; separate reports are not created as it was not specified in the test.
 2) Since there is only a single endpoint and resource, there is no need for a properties file.
-Feel free to reach out if you need any clarification.
+**********  Feel free to reach out if you need any clarification. ***********************
