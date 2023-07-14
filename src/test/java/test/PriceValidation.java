@@ -37,7 +37,7 @@ public class PriceValidation extends BaseTest {
  
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(testPassed, "Test is failed");
-        //softAssert.assertAll();
+        softAssert.assertAll();
 
 
 	}
